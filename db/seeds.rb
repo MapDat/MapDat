@@ -19,6 +19,12 @@ end
 num_users = 500
 num_reviews = 5000
 
+if Rails.env == 'test'
+  num_buildings = 10
+  num_poi = 10
+end
+
+
 # Seed buildings into the database
 
 if ENV["objects"]
@@ -67,10 +73,12 @@ if ENV["objects"]
     geo_buildings << prop_hash
   end
 
+puts Rails.env == 'test'
   # Insert map objects, buildings, and geo_points
   object_progress = ProgressBar.create(title: "Buildings",
-                                       total: geo_buildings.count,
+                                       total: Rails.env == 'test' ? num_buildings + 1 : geo_buildings.count,
                                        format: "%t: %B | Time Left: %E | Rate: %r | %c/%C")
+  i = 0
   geo_buildings.each do |geo_building|
     map_object = MapObject.create(name: geo_building[:name],
                                   abbrev: geo_building[:abbrev],
@@ -86,6 +94,8 @@ if ENV["objects"]
        map_object.geo_point.create(longitude: geo_point[1], latitude: geo_point[0])
     end
     object_progress.increment
+    break if Rails.env == 'test' && i == num_buildings
+    i += 1
   end
 
   # Seed points of interest
@@ -150,9 +160,10 @@ if ENV["objects"]
   end
 
   poi_progress = ProgressBar.create(title: "Points of Interest",
-                                       total: geo_pois.count,
-                                       format: "%t: %B | Time Left: %E | Rate: %r | %c/%C")
+                                    total: Rails.env == 'test' ? num_poi + 1 : geo_pois.count,
+                                    format: "%t: %B | Time Left: %E | Rate: %r | %c/%C")
   # Insert map objects and points of interest
+  i = 0
   geo_pois.each do |geo_poi|
     map_object = MapObject.create(name: geo_poi[:name],
                                   description: geo_poi[:desc],
@@ -164,37 +175,39 @@ if ENV["objects"]
       map_object.geo_point.create(longitude: geo_point[1], latitude: geo_point[0])
     end
     poi_progress.increment
-  end
-end
-
-if ENV["restaurants"]
-
-  # RESTAURANTS
-  restaurants = YAML.load_file("#{Rails.root}/db/restaurants.yml")
-  i = 0
-  restaurants.each do |key, value|
-  #  puts restaurants[key]
-    object_id = @connection.exec_query("SELECT m.id FROM map_object m
-                                        WHERE m.abbrev = '#{restaurants[key]['Location']}'")
-
-    object_id = object_id.first["id"]
-    puts key
-    open_hours = []
-    restaurants[key].each do |key, value|
-      next if key == 'Location'
-      day = Day.new(key, value["open"], value["close"])
-      open_hours << day
-      puts value["open"].to_s + ' ' + value["close"].to_s
-    end
-
-    begin
-      Restaurant_Seed.new(i, key, '', '', object_id, open_hours)
-    rescue => error
-      puts error
-      print '_'
-    end
-
+    break if Rails.env == 'test' && i == num_poi
     i += 1
-    #Restaurant.new restaurant[key], '', '',
   end
 end
+
+# if ENV["restaurants"]
+#
+#   # RESTAURANTS
+#   restaurants = YAML.load_file("#{Rails.root}/db/restaurants.yml")
+#   i = 0
+#   restaurants.each do |key, value|
+#   #  puts restaurants[key]
+#     object_id = @connection.exec_query("SELECT m.id FROM map_object m
+#                                         WHERE m.abbrev = '#{restaurants[key]['Location']}'")
+#
+#     object_id = object_id.first["id"]
+#     puts key
+#     open_hours = []
+#     restaurants[key].each do |key, value|
+#       next if key == 'Location'
+#       day = Day.new(key, value["open"], value["close"])
+#       open_hours << day
+#       puts value["open"].to_s + ' ' + value["close"].to_s
+#     end
+#
+#     begin
+#       Restaurant_Seed.new(i, key, '', '', object_id, open_hours)
+#     rescue => error
+#       puts error
+#       print '_'
+#     end
+#
+#     i += 1
+#     #Restaurant.new restaurant[key], '', '',
+#   end
+# end
