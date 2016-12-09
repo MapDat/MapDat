@@ -59,6 +59,7 @@ test:
   <<: *default
   database: mapdat_test
 
+
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -80,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: dfk80bsj6t3aur
-  username: cmmvthdhiuxjeo
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  password: <%= ENV['_DATABASE_PASSWORD'] %>

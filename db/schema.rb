@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161209013218) do
+ActiveRecord::Schema.define(version: 20161209200136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,18 +19,28 @@ ActiveRecord::Schema.define(version: 20161209013218) do
     t.integer  "outlets"
     t.boolean  "computers"
     t.boolean  "study_space"
-    t.string   "floors_integer"
-    t.integer  "object_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.integer  "floors"
+    t.integer  "map_object_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "geo_points", force: :cascade do |t|
     t.decimal  "longitude"
     t.decimal  "latitude"
-    t.integer  "object_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "map_object_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "is_opens", force: :cascade do |t|
+    t.integer  "map_object_id"
+    t.integer  "restaurant_id"
+    t.string   "day"
+    t.integer  "open_time"
+    t.integer  "close_time"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "map_objects", force: :cascade do |t|
@@ -38,6 +48,20 @@ ActiveRecord::Schema.define(version: 20161209013218) do
     t.string   "abbrev"
     t.text     "description"
     t.string   "image_path"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pois", force: :cascade do |t|
+    t.string   "poi_type"
+    t.integer  "map_object_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
