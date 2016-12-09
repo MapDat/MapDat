@@ -17,4 +17,4 @@ test:
   password: <%= ENV['TEST_DATABASE_PASSWORD'] %>
 
 production:
-  <<: *defaults
+  <<: *default
