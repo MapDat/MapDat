@@ -1,3 +1,3 @@
 class GeoPoint < ApplicationRecord
-  belongs_to :MapObject
+  belongs_to :map_object
 end

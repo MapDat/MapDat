@@ -1,4 +1,4 @@
 class MapObject < ApplicationRecord
-  has_many :geo_points
-  has_many :buildings
+  has_many :geo_point
+  has_many :building
 end

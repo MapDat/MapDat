@@ -5,6 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+ActiveRecord::Base.establish_connection
+ActiveRecord::Base.connection.tables.each do |table|
+  next if table == 'schema_migrations'
+
+  # MySQL and PostgreSQL
+  ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
+
+  # SQLite
+  # ActiveRecord::Base.connection.execute("DELETE FROM #{table}")
+end
+
 num_users = 500
 num_reviews = 5000
 
@@ -58,22 +69,24 @@ if ENV["objects"]
   end
 
   # Insert map objects, buildings, and geo_points
+  object_progress = ProgressBar.create(title: "Buildings",
+                                       total: geo_buildings.count,
+                                       format: "%t: %B | Time Left: %E | Rate: %r | %c/%C")
   geo_buildings.each do |geo_building|
     map_object = MapObject.create(name: geo_building[:name],
                                   abbrev: geo_building[:abbrev],
                                   description: geo_building[:desc],
                                   image_path: geo_building[:remote_photo_path])
 
-    map_object.buildings.create(
+    map_object.building.create(
                                outlets: 0,
                                computers: false,
                                study_space: false,
                                floors: 0)
 
-    puts geo_building[:name]
-
     geo_building[:geo_points].each do |geo_point|
-       map_object.geo_points.create(longitude: geo_point[1], latitude: geo_point[0])
-     end
+       map_object.geo_point.create(longitude: geo_point[1], latitude: geo_point[0])
+    end
+    object_progress.increment
   end
 end
