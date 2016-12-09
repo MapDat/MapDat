@@ -1,0 +1,2 @@
+class MapObject < ApplicationRecord
+end
