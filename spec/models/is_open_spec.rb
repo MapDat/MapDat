@@ -1,5 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe IsOpen, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should belong_to(:map_object) }
+  it { should belong_to(:restaurant) }
 end
