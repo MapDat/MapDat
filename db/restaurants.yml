@@ -1,0 +1,818 @@
+'Beaty POD':
+  Location: "BEA"
+  Monday:
+    open: 900
+    close: 300
+  Tuesday:
+    open: 900
+    close: 300
+  Wednesday:
+    open: 900
+    close: 300
+  Thursday:
+    open: 900
+    close: 300
+  Friday:
+    open: 900
+    close: 300
+  Saturday:
+    open: 900
+    close: 300
+  Sunday:
+    open: 900
+    close: 300
+'Broward Dining Center Chick-Fil-A':
+  Location: "DINE"
+  Monday:
+    open: 930
+    close: 2000
+  Tuesday:
+    open: 930
+    close: 2000
+  Wednesday:
+    open: 930
+    close: 2000
+  Thursday:
+    open: 930
+    close: 2000
+  Friday:
+    open: 930
+    close: 2000
+  Saturday:
+    open: 1100
+    close: 1800
+'Chomp It @ Racquet Club Dining Center':
+  Location: "RCD"
+  Monday:
+    open: 1030
+    close: 1900
+  Tuesday:
+    open: 1030
+    close: 1900
+  Wednesday:
+    open: 1030
+    close: 1900
+  Thursday:
+    open: 1030
+    close: 1900
+  Friday:
+    open: 1030
+    close: 1430
+'Engineering Bldg Java City':
+  Location: "NEB"
+  Monday:
+    open: 800
+    close: 1500
+  Tuesday:
+    open: 800
+    close: 1500
+  Wednesday:
+    open: 800
+    close: 1500
+  Thursday:
+    open: 800
+    close: 1500
+  Friday:
+    open: 800
+    close: 1500
+'Fresh Food Company':
+  Location: "DINE"
+  Monday:
+    open: 700
+    close: 2300
+  Tuesday:
+    open: 700
+    close: 2300
+  Wednesday:
+    open: 700
+    close: 2300
+  Thursday:
+    open: 700
+    close: 2300
+  Friday:
+    open: 700
+    close: 2200
+  Saturday:
+    open: 700
+    close: 2200
+  Sunday:
+    open: 700
+    close: 2300
+'Gator Corner Dining Center':
+  Location: "FSF"
+  Monday:
+    open: 700
+    close: 2300
+  Tuesday:
+    open: 700
+    close: 2300
+  Wednesday:
+    open: 700
+    close: 2300
+  Thursday:
+    open: 700
+    close: 2300
+  Friday:
+    open: 700
+    close: 2200
+  Saturday:
+    open: 700
+    close: 2200
+  Sunday:
+    open: 700
+    close: 2300
+'Genetics Cafe':
+  Location: "CGRC"
+  Monday:
+    open: 830
+    close: 1500
+  Tuesday:
+    open: 830
+    close: 1500
+  Wednesday:
+    open: 830
+    close: 1500
+  Thursday:
+    open: 830
+    close: 1500
+  Friday:
+    open: 830
+    close: 1300
+'Graham POD / Chomp It':
+  Location: "GRAO"
+  Monday:
+    open: 800
+    close: 300
+  Tuesday:
+    open: 800
+    close: 300
+  Wednesday:
+    open: 800
+    close: 300
+  Thursday:
+    open: 800
+    close: 300
+  Friday:
+    open: 800
+    close: 300
+  Saturday:
+    open: 1000
+    close: 300
+  Sunday:
+    open: 1000
+    close: 300
+'Harn Camellia Court Cafe':
+  Location: "HARN"
+  Tuesday:
+    open: 1100
+    close: 1400
+  Wednesday:
+    open: 1100
+    close: 1400
+  Thursday:
+    open: 1100
+    close: 1400
+  Friday:
+    open: 1100
+    close: 1400
+  Saturday:
+    open: 1100
+    close: 1400
+'Starbuck Harrell Medical Education':
+  Location: "HMEB"
+  Monday:
+    open: 700
+    close: 1700
+  Tuesday:
+    open: 700
+    close: 1700
+  Wednesday:
+    open: 700
+    close: 1700
+  Thursday:
+    open: 700
+    close: 1700
+  Friday:
+    open: 700
+    close: 1700
+'Heavener Hall Rising Roll':
+  Location: "HVNR"
+  Monday:
+    open: 800
+    close: 1600
+  Tuesday:
+    open: 800
+    close: 1600
+  Wednesday:
+    open: 800
+    close: 1600
+  Thursday:
+    open: 800
+    close: 1600
+  Friday:
+    open: 800
+    close: 1400
+'Hough Hall Chomp & Go':
+  Location: "HGS"
+  Monday:
+    open: 800
+    close: 1500
+  Tuesday:
+    open: 800
+    close: 1500
+  Wednesday:
+    open: 800
+    close: 1500
+  Thursday:
+    open: 800
+    close: 1500
+  Friday:
+    open: 800
+    close: 1300
+  Saturday:
+    open: 700
+    close: 1600
+  Sunday:
+    open: 700
+    close: 1600
+'Hub Chick-Fil-A':
+  Location: "HUB"
+  Monday:
+    open: 830
+    close: 2000
+  Tuesday:
+    open: 830
+    close: 2000
+  Wednesday:
+    open: 830
+    close: 2000
+  Thursday:
+    open: 830
+    close: 2000
+  Friday:
+    open: 830
+    close: 1800
+'Hub Einstein Bros. Bagels':
+  Location: "HUB"
+  Monday:
+    open: 700
+    close: 1600
+  Tuesday:
+    open: 700
+    close: 1600
+  Wednesday:
+    open: 700
+    close: 1600
+  Thursday:
+    open: 700
+    close: 1600
+  Friday:
+    open: 700
+    close: 1600
+'Hub POD':
+  Location: "HUB"
+  Monday:
+    open: 800
+    close: 2000
+  Tuesday:
+    open: 800
+    close: 2000
+  Wednesday:
+    open: 800
+    close: 2000
+  Thursday:
+    open: 800
+    close: 2000
+  Friday:
+    open: 800
+    close: 1800
+'Hub Starbucks':
+  Location: "HUB"
+  Monday:
+    open: 730
+    close: 1800
+  Tuesday:
+    open: 730
+    close: 1800
+  Wednesday:
+    open: 730
+    close: 1800
+  Thursday:
+    open: 730
+    close: 1800
+  Friday:
+    open: 730
+    close: 1600
+'Law School Cafe':
+  Location: "HOL"
+  Monday:
+    open: 730
+    close: 1530
+  Tuesday:
+    open: 730
+    close: 1530
+  Wednesday:
+    open: 730
+    close: 1530
+  Thursday:
+    open: 730
+    close: 1530
+  Friday:
+    open: 730
+    close: 1230
+'Library West Starbucks':
+  Location: "LBW"
+  Monday:
+    open: 0000
+    close: 2400
+  Tuesday:
+    open: 0000
+    close: 2400
+  Wednesday:
+    open: 0000
+    close: 2400
+  Thursday:
+    open: 0000
+    close: 2400
+  Friday:
+    open: 0000
+    close: 2400
+  Saturday:
+    open: 0000
+    close: 2400
+  Sunday:
+    open: 0000
+    close: 2400
+'Little Hall Express':
+  Location: "LHEX"
+  Monday:
+    open: 700
+    close: 1700
+  Tuesday:
+    open: 700
+    close: 1700
+  Wednesday:
+    open: 700
+    close: 1700
+  Thursday:
+    open: 700
+    close: 1700
+  Friday:
+    open: 700
+    close: 1600
+'Marston Science Library Starbucks':
+  Location: "MSL"
+  Monday:
+    open: 800
+    close: 100
+  Tuesday:
+    open: 800
+    close: 100
+  Wednesday:
+    open: 800
+    close: 100
+  Thursday:
+    open: 800
+    close: 100
+  Friday:
+    open: 800
+    close: 2200
+  Saturday:
+    open: 1000
+    close: 1800
+  Sunday:
+    open: 1000
+    close: 1300
+"Moes Southwest Grill":
+  Location: "RCD"
+  Monday:
+    open: 1030
+    close: 2030
+  Tuesday:
+    open: 1030
+    close: 2030
+  Wednesday:
+    open: 1030
+    close: 2030
+  Thursday:
+    open: 1030
+    close: 2030
+  Friday:
+    open: 1030
+    close: 2030
+  Saturday:
+    open: 1600
+    close: 2030
+  Sunday:
+    open: 1600
+    close: 2030
+'Orthopaedic Bldg Cafe':
+  Location: "OSMI"
+  Monday:
+    open: 800
+    close: 1430
+  Tuesday:
+    open: 800
+    close: 1430
+  Wednesday:
+    open: 800
+    close: 1430
+  Thursday:
+    open: 800
+    close: 1430
+  Friday:
+    open: 800
+    close: 1430
+'Pugh Hall Chomp & Go':
+  Location: "PUGH"
+  Monday:
+    open: 800
+    close: 1400
+  Tuesday:
+    open: 800
+    close: 1400
+  Wednesday:
+    open: 800
+    close: 1400
+  Thursday:
+    open: 800
+    close: 1400
+  Friday:
+    open: 800
+    close: 1400
+'Rawlings POD / Subway':
+  Location: "RAW"
+  Monday:
+    open: 700
+    close: 1300
+  Tuesday:
+    open: 700
+    close: 1300
+  Wednesday:
+    open: 700
+    close: 1300
+  Thursday:
+    open: 700
+    close: 1300
+  Friday:
+    open: 700
+    close: 1300
+  Saturday:
+    open: 1000
+    close: 1300
+  Sunday:
+    open: 1000
+    close: 1300
+'Sun Terrace Chick-Fil-A':
+  Location: "SMPB"
+  Monday:
+    open: 1030
+    close: 1500
+  Tuesday:
+    open: 1030
+    close: 1500
+  Wednesday:
+    open: 1030
+    close: 1500
+  Thursday:
+    open: 1030
+    close: 1500
+  Friday:
+    open: 1030
+    close: 1500
+'Sun Terrace Einstein Bros. Bagels':
+  Location: "SMPB"
+  Monday:
+    open: 700
+    close: 1400
+  Tuesday:
+    open: 700
+    close: 1400
+  Wednesday:
+    open: 700
+    close: 1400
+  Thursday:
+    open: 700
+    close: 1400
+  Friday:
+    open: 700
+    close: 1400
+'Sun Terrace Panda Express':
+  Location: "SMPB"
+  Monday:
+    open: 1030
+    close: 1500
+  Tuesday:
+    open: 1030
+    close: 1500
+  Wednesday:
+    open: 1030
+    close: 1500
+  Thursday:
+    open: 1030
+    close: 1500
+  Friday:
+    open: 1030
+    close: 1500
+'Sun Terrace Salad Creations':
+  Location: "SMPB"
+  Monday:
+    open: 1030
+    close: 1430
+  Tuesday:
+    open: 1030
+    close: 1430
+  Wednesday:
+    open: 1030
+    close: 1430
+  Thursday:
+    open: 1030
+    close: 1430
+  Friday:
+    open: 1030
+    close: 1430
+'Sun Terrace Starbucks':
+  Location: "SMPB"
+  Monday:
+    open: 600
+    close: 1800
+  Tuesday:
+    open: 600
+    close: 1800
+  Wednesday:
+    open: 600
+    close: 1800
+  Thursday:
+    open: 600
+    close: 1800
+  Friday:
+    open: 600
+    close: 1800
+'SWRC Freshens':
+  Location: "SWRC"
+  Monday:
+    open: 1200
+    close: 2200
+  Tuesday:
+    open: 1200
+    close: 2200
+  Wednesday:
+    open: 1200
+    close: 2200
+  Thursday:
+    open: 1200
+    close: 2200
+  Friday:
+    open: 1200
+    close: 2200
+'Turlington Jamba Juice':
+  Location: "TUR"
+  Monday:
+    open: 800
+    close: 1700
+  Tuesday:
+    open: 800
+    close: 1700
+  Wednesday:
+    open: 800
+    close: 1700
+  Thursday:
+    open: 800
+    close: 1700
+  Friday:
+    open: 800
+    close: 1700
+'Turlington Subway':
+  Location: "TUR"
+  Monday:
+    open: 700
+    close: 1700
+  Tuesday:
+    open: 700
+    close: 1700
+  Wednesday:
+    open: 700
+    close: 1700
+  Thursday:
+    open: 700
+    close: 1700
+  Friday:
+    open: 700
+    close: 1700
+'Vet Med Einstein Bros. Bagels':
+  Location: "CERC"
+  Monday:
+    open: 715
+    close: 1530
+  Tuesday:
+    open: 715
+    close: 1530
+  Wednesday:
+    open: 715
+    close: 1530
+  Thursday:
+    open: 715
+    close: 1530
+  Friday:
+    open: 715
+    close: 1530
+'Arredondo Cafe':
+  Location: "REI"
+  Monday:
+    open: 1100
+    close: 1400
+  Tuesday:
+    open: 1100
+    close: 1400
+  Wednesday:
+    open: 1100
+    close: 1400
+  Thursday:
+    open: 1100
+    close: 1400
+  Friday:
+    open: 1100
+    close: 1400
+'Croutons':
+  Location: "REI"
+  Monday:
+    open: 1030
+    close: 1900
+  Tuesday:
+    open: 1030
+    close: 1900
+  Wednesday:
+    open: 1030
+    close: 1900
+  Thursday:
+    open: 1030
+    close: 1900
+  Friday:
+    open: 1030
+    close: 1500
+'Freshens / POD':
+  Location: "REI"
+  Monday:
+    open: 900
+    close: 2300
+  Tuesday:
+    open: 900
+    close: 2300
+  Wednesday:
+    open: 900
+    close: 2300
+  Thursday:
+    open: 900
+    close: 2300
+  Friday:
+    open: 900
+    close: 2300
+  Saturday:
+    open: 1300
+    close: 2200
+  Sunday:
+    open: 1300
+    close: 2200
+'Panda Express':
+  Location: "REI"
+  Monday:
+    open: 1030
+    close: 2000
+  Tuesday:
+    open: 1030
+    close: 2000
+  Wednesday:
+    open: 1030
+    close: 2000
+  Thursday:
+    open: 1030
+    close: 2000
+  Friday:
+    open: 1030
+    close: 1700
+'Papa Johns':
+  Location: "REI"
+  Monday:
+    open: 1030
+    close: 1500
+  Tuesday:
+    open: 1030
+    close: 1500
+  Wednesday:
+    open: 1030
+    close: 1500
+  Thursday:
+    open: 1030
+    close: 1500
+  Friday:
+    open: 1030
+    close: 1500
+'Pollo Tropical':
+  Location: "REI"
+  Monday:
+    open: 1030
+    close: 1800
+  Tuesday:
+    open: 1030
+    close: 1800
+  Wednesday:
+    open: 1030
+    close: 1800
+  Thursday:
+    open: 1030
+    close: 1800
+  Friday:
+    open: 1030
+    close: 1500
+'Starbucks @ Reitz Union':
+  Location: "REI"
+  Monday:
+    open: 700
+    close: 2000
+  Tuesday:
+    open: 700
+    close: 2000
+  Wednesday:
+    open: 700
+    close: 2000
+  Thursday:
+    open: 700
+    close: 2000
+  Friday:
+    open: 700
+    close: 1700
+  Saturday:
+    open: 1000
+    close: 1800
+  Sunday:
+    open: 1000
+    close: 1800
+'Subway':
+  Location: "REI"
+  Monday:
+    open: 730
+    close: 1300
+  Tuesday:
+    open: 730
+    close: 1300
+  Wednesday:
+    open: 730
+    close: 1300
+  Thursday:
+    open: 730
+    close: 1300
+  Friday:
+    open: 730
+    close: 1300
+  Saturday:
+    open: 730
+    close: 1300
+  Sunday:
+    open: 730
+    close: 1300
+'Wendys':
+  Location: "REI"
+  Monday:
+    open: 1030
+    close: 2000
+  Tuesday:
+    open: 1030
+    close: 2000
+  Wednesday:
+    open: 1030
+    close: 2000
+  Thursday:
+    open: 1030
+    close: 2000
+  Friday:
+    open: 1030
+    close: 2000
+  Saturday:
+    open: 1030
+    close: 2000
+  Sunday:
+    open: 1030
+    close: 2000
+'Wing Zone @ Orange & Brew':
+  Location: "REI"
+  Monday:
+    open: 1100
+    close: 2200
+  Tuesday:
+    open: 1100
+    close: 2200
+  Wednesday:
+    open: 1100
+    close: 2200
+  Thursday:
+    open: 1100
+    close: 2200
+  Friday:
+    open: 1100
+    close: 0000
+  Saturday:
+    open: 1130
+    close: 2100
+  Sunday:
+    open: 1130
+    close: 2100
