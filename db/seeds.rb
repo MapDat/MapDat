@@ -77,7 +77,7 @@ puts Rails.env == 'test'
   # Insert map objects, buildings, and geo_points
   object_progress = ProgressBar.create(title: "Buildings",
                                        total: Rails.env == 'test' ? num_buildings + 1 : geo_buildings.count,
-                                       format: "%t: %B | Time Left: %E | Rate: %r | %c/%C")
+                                       format: "%t: |%B| Time Left: %E | Rate: %r | %c/%C")
   i = 0
   geo_buildings.each do |geo_building|
     map_object = MapObject.create(name: geo_building[:name],
@@ -161,7 +161,7 @@ puts Rails.env == 'test'
 
   poi_progress = ProgressBar.create(title: "Points of Interest",
                                     total: Rails.env == 'test' ? num_poi + 1 : geo_pois.count,
-                                    format: "%t: %B | Time Left: %E | Rate: %r | %c/%C")
+                                    format: "%t: |%B| Time Left: %E | Rate: %r | %c/%C")
   # Insert map objects and points of interest
   i = 0
   geo_pois.each do |geo_poi|
@@ -180,34 +180,29 @@ puts Rails.env == 'test'
   end
 end
 
-# if ENV["restaurants"]
-#
-#   # RESTAURANTS
-#   restaurants = YAML.load_file("#{Rails.root}/db/restaurants.yml")
-#   i = 0
-#   restaurants.each do |key, value|
-#   #  puts restaurants[key]
-#     object_id = @connection.exec_query("SELECT m.id FROM map_object m
-#                                         WHERE m.abbrev = '#{restaurants[key]['Location']}'")
-#
-#     object_id = object_id.first["id"]
-#     puts key
-#     open_hours = []
-#     restaurants[key].each do |key, value|
-#       next if key == 'Location'
-#       day = Day.new(key, value["open"], value["close"])
-#       open_hours << day
-#       puts value["open"].to_s + ' ' + value["close"].to_s
-#     end
-#
-#     begin
-#       Restaurant_Seed.new(i, key, '', '', object_id, open_hours)
-#     rescue => error
-#       puts error
-#       print '_'
-#     end
-#
-#     i += 1
-#     #Restaurant.new restaurant[key], '', '',
-#   end
-# end
+if ENV["restaurants"]
+  # RESTAURANTS
+  restaurants = YAML.load_file("#{Rails.root}/db/restaurants.yml")
+
+  rest_progress = ProgressBar.create(title: "Restaurants",
+                                     total: restaurants.count,
+                                     format: "%t: |%B| Time Left: %E | Rate: %r | %c/%C")
+  restaurants.each do |key, value|
+    abbrev = restaurants[key]['Location']
+    map_object = MapObject.find_by(abbrev: abbrev)
+
+    # TODO: Find a source for descriptions in restaurants. Add to
+    # db/restaurants.yml.
+    restaurant = Restaurant.create(name: key)
+
+    restaurants[key].each do |day, value|
+      next if day == "Location"
+      day
+      open_time = restaurants[key][day]["open"]
+      close_time =  restaurants[key][day]["close"]
+      IsOpen.create(map_object_id: map_object.id, restaurant_id:  restaurant.id,
+                    open_time: open_time, close_time: close_time)
+    end
+    rest_progress.increment
+  end
+end
