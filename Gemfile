@@ -17,6 +17,9 @@ gem 'coffee-rails', '~> 4.2'
 # postgres database
 gem 'pg'
 
+#leaflet
+gem 'leaflet-rails'
+
 # progress bar
 gem 'ruby-progressbar'
 
